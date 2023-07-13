@@ -1,0 +1,22 @@
+@use "partials/variables" as *;
+@use "partials/reset" as *;
+@use "partials/mixins" as *;
+
+section {
+    background-color: $bg-links-color;
+    height: 120px;
+}
+ul {
+    @include flex;
+    list-style: none;
+    height: $height-percentual;
+}
+li {
+    @include flex;
+}
+a {
+    color: $text-main-color;
+    text-decoration: none;
+    padding: 10px;
+    font-size: x-small;
+}

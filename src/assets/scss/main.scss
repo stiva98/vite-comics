@@ -3,3 +3,10 @@
 @use "partials/mixins" as *;
 
 
+main {
+    background-color: $bg-main-color;
+    color: $text-main-color;
+}
+.content {
+    padding: 40px 0;
+}
