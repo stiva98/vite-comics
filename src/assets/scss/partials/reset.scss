@@ -3,6 +3,8 @@
     RESET
     --------------------
 */
+@use "variables" as *;
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -12,4 +14,10 @@
         // *:not(ul)
         padding: 0;
     }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: $height-percentual;
 }
