@@ -1,0 +1,45 @@
+@use "partials/variables" as *;
+@use "partials/reset" as *;
+@use "partials/mixins" as *;
+
+.footer-img {
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}.container {
+    @include flex-no-between;
+    padding: 40px 0;
+}
+ul {
+    @include no-ul;
+    padding: 0; 
+}
+a {
+    color: $text-footer-color;
+    text-decoration: none;
+    font-size: x-small;
+}
+h3 {
+    color: $text-main-color;
+    padding: 10px 0;
+}
+.link-footer-center {
+    padding: 0 20px;
+}
+.footer-button {
+    background-color: $bg-footer-button;
+}
+.my-row {
+    @include flex;
+    width: $height-percentual;
+}
+button {
+    padding: 10px;
+    border: 2px solid $bg-links-color;
+    background-color: transparent;
+    color: $text-main-color;
+    font-weight: bold;
+}
+.my-col-link {
+    @include flex-no-between
+}
