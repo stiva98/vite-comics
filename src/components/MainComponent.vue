@@ -108,6 +108,11 @@ export default {
                 <FilmComponent v-for="(film, filmIndex) in films" :key="filmIndex" :filmImage="film.thumb" :filmTitle="film.series"/>
             </div>
         </div>
+        <div>
+            <button>
+                LOAD MORE
+            </button>
+        </div>
     </section>
     <BlueLinksComponent />
 </template>

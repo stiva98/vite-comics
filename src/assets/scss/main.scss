@@ -15,12 +15,9 @@ main {
         position: relative;
     }
     button {
-        background-color: $bg-links-color;
-        border: none;
-        padding: 10px;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
+        @include button-blue;
+        position: absolute;
+        bottom: -20px;
     }
 }
 .card-container {
@@ -35,4 +32,12 @@ main {
             flex-wrap: wrap;
         }
     }
-}
+    div {
+        text-align: center;
+        
+        button {
+            @include button-blue;
+            margin: 30px 0 20px 0;
+        }
+    }
+    }

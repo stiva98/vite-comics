@@ -16,3 +16,11 @@
 @mixin no-ul {
     list-style: none;
 }
+@mixin button-blue {
+    background-color: $bg-links-color;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
