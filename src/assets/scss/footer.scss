@@ -42,5 +42,5 @@ button {
     cursor: pointer;
 }
 .my-col-link {
-    @include flex-no-between
+    @include flex-no-between;
 }

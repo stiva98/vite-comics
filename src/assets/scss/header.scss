@@ -11,9 +11,39 @@ header {
     @include flex;
     height: $height-percentual;
 }
+.my-col-link {
+    height: 100%;
+}
 ul {
     @include flex;
     list-style: none;
+    height: 100%;
+}
+li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    &::after {
+        content: '';
+        height: 5px;
+        width: 100%;
+        display: block;
+        background-color: $bg-links-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+    &:hover::after {
+        visibility: visible;
+        opacity: 1;
+    }
+    &:hover a {
+        color: $bg-links-color;
+    }
 }
 a {
     color: $text-header-color;
