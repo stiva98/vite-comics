@@ -39,6 +39,7 @@ button {
     background-color: transparent;
     color: $text-main-color;
     font-weight: bold;
+    cursor: pointer;
 }
 .my-col-link {
     @include flex-no-between
